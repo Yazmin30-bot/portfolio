@@ -50,7 +50,7 @@ body{
     color: white; 
     margin: 10px;  
 }
-
+/*Change the color when hover the object*/
 #navbar ul li a:hover{
     color: skyblue;
 }
@@ -77,7 +77,7 @@ section{
     width: 100%;
     text-align: center; 
 }
-
+/*Divide the figure in 2 columns*/
 .grid{
     display: grid;
     grid-template-columns: 0.5fr 2fr;
@@ -121,7 +121,7 @@ main #contact-me{
     flex-wrap: wrap;
     padding: 5px;
 }  
- 
+/*Show the first image larger */
 .grid #first{
     position: relative;
     width: calc(100% - 1rem);
