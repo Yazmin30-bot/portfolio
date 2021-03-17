@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Define scroll-behavior*/
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;  
+}
+
+body{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   background-color:  rgba(0, 0, 0, 0.7);
+   color: #fff;
+   line-height: 1.5;
+   height: 100vh; 
+   scroll-padding-top: 100px;  
+}
+
+#navbar {
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 13vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: right;
+    margin:  1rem 0;
+    position:fixed;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content:center;
+    margin:  1rem 0;
+}
+
+#navbar ul li {
+    margin:  1rem 0;
+    padding: 1rem;
+    height: fit-content;
+    list-style-type:none;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white; 
+    margin: 10px;  
+}
+
+#navbar ul li a:hover{
+    color: skyblue;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5%;
+}
+
+#about-me img {
+    width: 30%;
+    border-radius: 50%;  
+}
+
+#about-me div ul li{
+    list-style: none;
+}
+
+#about-me p {
+    width: 100%;
+    text-align: center; 
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+    grid-column-start: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5%;
+    position:static;
+    align-items: flex-start;
+}
+
+div h2{
+    font-size: 2rem;
+    color: #e9e5b0; 
+}
+
+main {
+    margin-top: 5rem;
+}
+
+main #about-me{
+        background-image: url("https://images.unsplash.com/photo-1517547196086-e63b7ae6afb0?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OXx8YmxhY2slMjBiYWNrZ3JvdW5kfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=900");
+        height: fit-content;
+    align-items: center;  
+}
+
+main #work{
+    width: 100%;
+    height: fit-content;
+    background-image: url("https://images.unsplash.com/photo-1533113354171-490d836238e3?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTJ8fHVuaXZlcnNlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=900");
+}
+
+main #contact-me{
+    width: 100%;
+    height: fit-content;
+    
+    background-image: url("https://images.unsplash.com/photo-1517547196086-e63b7ae6afb0?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OXx8YmxhY2slMjBiYWNrZ3JvdW5kfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=900");
+}
+
+.work-header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+}  
+ 
+.grid #first{
+    position: relative;
+    width: calc(100% - 1rem);
+    overflow: hidden;
+    max-width: 100%;
+    float:left;
+    padding: 1rem;
+    float: inline-start;
+    grid-template-columns: -1fr 2fr;
+}
+
+figure {
+    position: relative;
+    width: calc(50% - 2rem);
+    overflow: hidden;
+    max-width: max-content;
+    float:left;
+    padding: 1rem;
+}
+    
+figure img { 
+    display: block;
+    position: relative;
+    left: 52%;
+    transform: translateX(-51%);
+    width:100%;
+    height:100%;
+    padding: 1rem;
+}
+    
+figcaption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0,0,0,.5);   
+    font-size: 1em;
+    display: none;
+}
+
+.work-header figure:hover > figcaption{
+    display: block;
+}
+      
+figure a {
+    float:initial;
+    font-style: italic;
+    font-weight: normal;
+    color: white;
+    font-size: 0.9em;
+}
+
+#contact-list ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content:center;
+    margin:  1rem 1rem;
+}
+
+#contact-list ul li a:hover{
+    color: skyblue;
+    border-bottom: 0.5rem solid skyblue;
+}
+
+#contact-list ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white; 
+    margin: 10px;
+    border-bottom: 0.5rem solid seashell; 
+}
+
+.contac-me div a {
+    text-decoration: none;
+    list-style-type:none;
+    text-transform: uppercase;
+    color: white;
+    margin: 10px;   
+}
+      
+footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+footer h2 {
+    font-size: 20px;
+}
+
+
+
+
+/* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
+
+/* Tablets - header changes color */
+@media screen and (max-width: 992px) {
+    div h2{
+        color: rgb(119, 146, 103);
+    } 
+    body{
+        background-color:  rgb(56, 85, 39);
+    }
+}
+  
+  /* Large smartphones - navbar changes color */
+@media screen and (max-width: 768px) {
+    div h2{
+        color: rgb(146, 103, 140);
+    } 
+    body{
+        background-color:  rgb(87, 49, 82);
+    }
+    .grid{
+        grid-template-columns:none;
+    }
+}
+  
+  /* Small smartphones - image placeholders change color */
+@media screen and (max-width: 576px) {
+    #navbar ul {
+      display: block;
+      text-align: left;
+    }
+    #contact-list ul {
+        display: block;
+        text-align: left;
+    }
+    #contact-list ul li a{
+        display: block;
+        text-align: center;
+        margin-bottom: 0.25rem solid ;
+    }
+    .grid{
+        grid-template-columns:none;
+    }
+    figure{
+        width: calc(70% - 1rem);
+        left: 20%;
+    }
+    #first{
+        left: 0%;
+    }
+    main {
+        margin-top: 0;
+        margin-left: 10rem;
+        background-color: rgba(0, 0, 0, 0.205);
+    }
+    #navbar {
+        top: 0;
+        width: 35%;
+        height: auto;
+        background-color: rgba(0,0,0,.5);
+    }
+    footer{
+        z-index: 1;
+    }
+    body{
+        background-color: rgb(46, 42, 70);
+
+    }
+    figcaption { 
+        font-size: 0.8em;
+        padding: 0.6rem;
+    }
+    figure a {
+        font-size: 0.7em;
+    }
+    div h2{
+        color: rgb(104, 100, 128);;
+    }   
+
+  }
+  
