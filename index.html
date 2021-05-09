@@ -3,19 +3,26 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio </title>
+   
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/style.css">
+
+    <title>Portfolio </title>
 </head>
 
-<body>
+<body >
     <!--Define the Navegation Bar with the links-->
-    <header id="banner">
-        <nav id="navbar">
+    <header id="banner" class="main-menu">
+        <nav id="navbar" class="zindex-dropdown fixed-top text-right">
             <ul>
+                <li class="has-subnav">
+                    <a href="#"><i class="fa fa-list fa-2x"></i></a>    
+                </li>
                 <li><a href="#about-me">About Me</a></li>
                 <li><a href="#work">Work</a></li>
                 <li><a href="./assets/Yazmin Tinoco CV.pdf" target="blank">Resume</a></li>
@@ -23,7 +30,7 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main >
         <!--Define Section About Me with name, proffesional information, photo and location-->
         <section  id="about-me">
             <div>
@@ -44,7 +51,14 @@
             <br>
             <br>
             <div>
-                <p>I have a bachelor degree Mathematic Engineer with 3 years the professional experience in data Analyst and  programming 
+                <p> 
+                    I am a software engineer that has skills in both the back-end of web applications and the front-end. 
+                    My previous career as a math engineer brought me close to my true passion: coding. 
+                    I wasn’t satisfied with only being involved in automating and data analyzing , and wanted a deeper involvement in building out applications.
+                    In the next phase of my career, I not only want to work on the technically challenging facets of the application,
+                    but I also want to use my design skills to make the application look beautiful too. 
+                    I seek a role as a web developer at a company where I follow best practices like Test Driven Development and pair programming to help me learn 
+                    and grow as a developer, and continue to master the craft.
                 </p>
             <div>
             </div>
@@ -56,43 +70,40 @@
             </div>
             <div class="work-header">
                 <figure id="first">
-                    <img src="http://placekitten.com/700/500" />
-                    <figcaption>Placekitten <br> <a href="http://placekitten.com/" target="blank">http://placekitten.com/</a>
+                    <img src="./images/project1.png" />
+                    <figcaption>Project 1 <br> <a href="https://ragexxx.github.io/NY_MET_MUSEUM/" target="blank">https://ragexxx.github.io/NY_MET_MUSEUM/</a>
+                        <br><a href="https://github.com/ragexxx/NY_MET_MUSEUM/" target="blank">https://github.com/ragexxx/NY_MET_MUSEUM/</a>
                     </figcaption>
                 </figure>
                 <figure>
-                    <img src="http://www.placebear.com/700/500" />
-                    <figcaption>Placebear <br> <a href="https://placebear.com/" target="blank">https://placebear.com/</a></figcaption>
+                    <img src="./images/weather_dashboard.png" />
+                    <figcaption>Weather Dashboard<br> <a href="https://yazmin30-bot.github.io/weather-dashboard/" target="blank">https://yazmin30-bot.github.io/weather-dashboard/</a>
+                        <br><a href="https://github.com/Yazmin30-bot/weather-dashboard/" target="blank">https://github.com/Yazmin30-bot/weather-dashboard/</a>
+                    </figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="./images/code_quiz.png" />
+                    <figcaption>Code Quiz <br> <a href="https://yazmin30-bot.github.io/code-quiz/index.html" target="blank">https://yazmin30-bot.github.io/code-quiz/index.html/</a>
+                        <br><a href="https://github.com/Yazmin30-bot/code-quiz/" target="blank">https://github.com/Yazmin30-bot/code-quiz/</a>
+                    </figcaption>
                 </figure>
 
-                <figure>
-                    <img src="https://spaceholder.cc/700x500" />
-                    <figcaption>SpaceHolder <br> <a href="https://spaceholder.cc/" target="blank">https://spaceholder.cc/</a>
+              <!--   <figure>
+                    <img src="./images/work_day_scheduler.png" />
+                    <figcaption>Work Day Scheduler <br> <a href="https://yazmin30-bot.github.io/work-day-scheduler/" target="blank">https://yazmin30-bot.github.io/work-day-scheduler/</a>
+                        <br><a href="https://github.com/Yazmin30-bot/work-day-scheduler/" target="blank">https://github.com/Yazmin30-bot/work-day-scheduler/</a>
                     </figcaption>
                 </figure>
 
                 <figure>
-                    <img src="https://baconmockup.com/700/500/random" />
-                    <figcaption>Bacon Mockup <br> <a href="https://baconmockup.com/" target="blank">https://baconmockup.com/</a>
-                    </figcaption>
-                </figure>
+                    <img src="./images/password_generator.png" />
+                    <figcaption>Password Generator <br> <a href="https://yazmin30-bot.github.io/password-generator/" target="blank">https://yazmin30-bot.github.io/password-generator/</a>
+                    <br><a href="https://github.com/Yazmin30-bot/password-generator/" target="blank">https://github.com/Yazmin30-bot/password-generator/</a>
+                </figcaption>
+                </figure> -->
 
-                <figure>
-                    <img src="https://unsplash.it/700/500/?random" />
-                    <figcaption>Unsplash It <br> <a href="https://unsplash.it/" target="blank">https://unsplash.it/</a></figcaption>
-                </figure>
-
-                <figure>
-                    <img src="http://placeimg.com/700/500/animals" />
-                    <figcaption>PlaceIMG <br> <a href="http://placeimg.com/" target="blank">http://placeimg.com/</a></figcaption>
-                </figure>
-
-
-                <figure>
-                    <img src="http://www.fillmurray.com/700/500" />
-                    <figcaption>Fill Murray <br> <a href="http://www.fillmurray.com/" target="blank">http://www.fillmurray.com/</a>
-                    </figcaption>
-                </figure>
+             
             </div>
         </section>
          <!--Define Section Contact Me with contact links-->

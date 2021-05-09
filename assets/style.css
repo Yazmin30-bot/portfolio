@@ -1,6 +1,6 @@
 *{
     margin: 0;
-    padding: 0;
+    padding: 0; 
     box-sizing: border-box;
 }
 /*Define scroll-behavior*/
@@ -19,14 +19,14 @@ body{
 }
 
 #navbar {
-    top: 0;
-    z-index: 1;
+    /* top: 0; */
+    /* z-index: 1;  */
     width: 100%;
     height: 13vh;
     background-color: rgba(0, 0, 0, 0.2);
-    text-align: right;
+    /* text-align: right; */
     margin:  1rem 0;
-    position:fixed;
+    /*  position:fixed;  */
 }
 
 #navbar ul {
@@ -90,7 +90,7 @@ section{
 
 div h2{
     font-size: 2rem;
-    color: #e9e5b0; 
+    color: #b8b371; 
 }
 
 main {
@@ -101,6 +101,11 @@ main #about-me{
         background-image: url("https://images.unsplash.com/photo-1517547196086-e63b7ae6afb0?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OXx8YmxhY2slMjBiYWNrZ3JvdW5kfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=900");
         height: fit-content;
     align-items: center;  
+}
+main #about-me p{
+    margin: 10%, 10%;
+    text-align: justify;
+    color:  #b8b371; 
 }
 
 main #work{
@@ -167,7 +172,8 @@ figcaption {
 .work-header figure:hover > figcaption{
     display: block;
 }
-      
+
+
 figure a {
     float:initial;
     font-style: italic;
@@ -247,45 +253,75 @@ footer h2 {
   
   /* Small smartphones - image placeholders change color */
 @media screen and (max-width: 576px) {
-    #navbar ul {
+    .main-menu:hover,nav.main-menu.expanded {
+       /*  width:200px; */
+        overflow:visible;
+        }
+        header{
+            width: 50%;
+        }
+        .main-menu {
+           
+      /*   background:#212121; */
+        /* border-right:1px solid #e5e5e5; */
+        position:fixed;
+        top:0;
+        bottom:0;
+        height:10%; 
+        left:0;
+        width:50px;  
+        overflow:hidden;
+        transition:width .05s linear;
+        transition:width .05s linear;
+        transform:translateZ(0) scale(1,1); 
+         z-index:2;
+                 }
+
+   
+    
+     #navbar ul {
       display: block;
       text-align: left;
-    }
+    } 
     #contact-list ul {
         display: block;
         text-align: left;
     }
-    #contact-list ul li a{
+
+   
+    /* #contact-list ul li a{
         display: block;
         text-align: center;
         margin-bottom: 0.25rem solid ;
-    }
+    } */
     .grid{
         grid-template-columns:none;
     }
     figure{
-        width: calc(70% - 1rem);
-        left: 20%;
+        width: calc(90% - 1rem);
+        left: 5%;
     }
     #first{
         left: 0%;
     }
     main {
         margin-top: 0;
-        margin-left: 10rem;
+        /* margin-left: 1rem; */
         background-color: rgba(0, 0, 0, 0.205);
+        /* position:relative; */
     }
-    #navbar {
+    /* #navbar {
         top: 0;
         width: 35%;
         height: auto;
         background-color: rgba(0,0,0,.5);
-    }
+    } */
     footer{
         z-index: 1;
     }
     body{
         background-color: rgb(46, 42, 70);
+        display: inline-flexbox;
 
     }
     figcaption { 
