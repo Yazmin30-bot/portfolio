@@ -55,6 +55,9 @@ body{
     color: skyblue;
 }
 
+.a-m{
+ width: 60%;
+}
 section{
     display: flex;
     flex-direction: column;
@@ -336,4 +339,5 @@ footer h2 {
     }   
 
   }
+
   

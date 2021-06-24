@@ -6,22 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>   
 
     <title>Portfolio </title>
 </head>
 
-<body >
+<body>
     <!--Define the Navegation Bar with the links-->
     <header id="banner" class="main-menu">
         <nav id="navbar" class="zindex-dropdown fixed-top text-right">
             <ul>
                 <li class="has-subnav">
-                    <a href="#"><i class="fa fa-list fa-2x"></i></a>    
+                    <a href="#"><i class="fa fa-list fa-2x"></i></a>
                 </li>
                 <li><a href="#about-me">About Me</a></li>
                 <li><a href="#work">Work</a></li>
@@ -30,37 +32,40 @@
             </ul>
         </nav>
     </header>
-    <main >
+    <main>
         <!--Define Section About Me with name, proffesional information, photo and location-->
-        <section  id="about-me">
+        <section id="about-me">
             <div>
                 <h2>Yazmin Tinoco</h2>
                 <img src="./images/yop.jpg" alt="Yazmin Tinoco">
                 <ul>
+                    <li>Back End Web Developer</li>
                     <li>Mathematic Engineer</li>
-                    <li>Full Stack Web Developer</li>
-                    <li>UX/UI Designer</li>
                     <li>Data Analyst</li>
                 </ul><br>
                 <div id="location">
                     <i class="material-icons">&#xe55f;</i>
-                    <a href="https://www.google.com/maps/place/Richardson,+TX/@32.9639841,-96.726071,13z/data=!3m1!4b1!4m5!3m4!1s0x864c1ee979bea767:0x2cdb29c046270495!8m2!3d32.9483335!4d-96.7298519"
-                        target="blank">Richardson, TX</a>
+                    <a href="https://www.google.com/maps/place/Mexico+City,+CDMX,+Mexico/@19.39068,-99.2836995,11z/data=!3m1!4b1!4m5!3m4!1s0x85ce0026db097507:0x54061076265ee841!8m2!3d19.4326077!4d-99.133208"
+                        target="blank">Mexico City</a>
                 </div>
             </div>
             <br>
             <br>
-            <div>
-                <p> 
-                    I am a software engineer that has skills in both the back-end of web applications and the front-end. 
-                    My previous career as a math engineer brought me close to my true passion: coding. 
-                    I wasn’t satisfied with only being involved in automating and data analyzing , and wanted a deeper involvement in building out applications.
-                    In the next phase of my career, I not only want to work on the technically challenging facets of the application,
-                    but I also want to use my design skills to make the application look beautiful too. 
-                    I seek a role as a web developer at a company where I follow best practices like Test Driven Development and pair programming to help me learn 
-                    and grow as a developer, and continue to master the craft.
+            <div class="a-m">
+                <p>
+                    I am a Back End Web Developer. Experienced and versatile professional with strong
+                    mathematical engineering, database cleaning, data analyzing, programming, and bi- lingual
+                    skills seeks a position that will utilize my talents and experiences.
                 </p>
-            <div>
+
+                <ul>
+                    <li><i class="fab fa-js"></i> JavaScript</li>
+                    <li><i class='fab fa-node-js'></i> Nodejs</li>
+                    <li><i class="fa fa-database"></i> Sequelize ORM (SQL)</li>
+                    <li><i class="fa fa-server"></i> Express.js (Server)</li>
+                    <li><i class="fa fa-gear"></i> RESTful API</li>
+                </ul>
+
             </div>
         </section>
         <!--Define Section Work with web applications (placeholder images and names)-->
@@ -69,27 +74,66 @@
                 <h2>WORK</h2>
             </div>
             <div class="work-header">
+
                 <figure id="first">
                     <img src="./images/project1.png" />
-                    <figcaption>Project 1 <br> <a href="https://ragexxx.github.io/NY_MET_MUSEUM/" target="blank">https://ragexxx.github.io/NY_MET_MUSEUM/</a>
-                        <br><a href="https://github.com/ragexxx/NY_MET_MUSEUM/" target="blank">https://github.com/ragexxx/NY_MET_MUSEUM/</a>
+                    <figcaption>Project 1 <br>
+                        <p>Displays artwork of the MET Museum and interesting places in New York that are closest to the
+                            museum.</p>
+                        <ul>Build with:
+                            <li>HTML</li>
+                            <li>CSS Foundation Framework</li>
+                            <li>JavaScript</li>
+                            <li>jQuery</li>
+                            <li>MET API</li>
+                            <li>OpenTripMap API</li>
+                        </ul><a href="https://ragexxx.github.io/NY_MET_MUSEUM/"
+                            target="blank">https://ragexxx.github.io/NY_MET_MUSEUM/</a>
+                        <br><a href="https://github.com/ragexxx/NY_MET_MUSEUM/"
+                            target="blank">https://github.com/ragexxx/NY_MET_MUSEUM/</a>
+
                     </figcaption>
+
                 </figure>
+
+
+
                 <figure>
                     <img src="./images/weather_dashboard.png" />
-                    <figcaption>Weather Dashboard<br> <a href="https://yazmin30-bot.github.io/weather-dashboard/" target="blank">https://yazmin30-bot.github.io/weather-dashboard/</a>
-                        <br><a href="https://github.com/Yazmin30-bot/weather-dashboard/" target="blank">https://github.com/Yazmin30-bot/weather-dashboard/</a>
-                    </figcaption>
-                </figure>
-                
-                <figure>
-                    <img src="./images/code_quiz.png" />
-                    <figcaption>Code Quiz <br> <a href="https://yazmin30-bot.github.io/code-quiz/index.html" target="blank">https://yazmin30-bot.github.io/code-quiz/index.html/</a>
-                        <br><a href="https://github.com/Yazmin30-bot/code-quiz/" target="blank">https://github.com/Yazmin30-bot/code-quiz/</a>
+                    <figcaption>Weather Dashboard<br>
+                        <p>Displays the weather of the city you are looking for</p>
+                        <ul>Build with:
+                            <li>HTML5</li>
+                            <li> CSS Bootstrap Framework</li>
+                            <li>JavaScript</li>
+                            <li>One Call API</li>
+                            <li>Current weather data API</li>
+                        </ul><a href="https://yazmin30-bot.github.io/weather-dashboard/"
+                            target="blank">https://yazmin30-bot.github.io/weather-dashboard/</a>
+                        <br><a href="https://github.com/Yazmin30-bot/weather-dashboard/"
+                            target="blank">https://github.com/Yazmin30-bot/weather-dashboard/</a>
                     </figcaption>
                 </figure>
 
-              <!--   <figure>
+
+                <figure>
+                    <img src="./images/code_quiz.png" />
+                    <figcaption>Code Quiz <br>
+                        <p>Displays a timed coding quiz with multiple-choice questions.</p>
+                        <ul>Build with:
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                        </ul><a href="https://yazmin30-bot.github.io/code-quiz/index.html"
+                            target="blank">https://yazmin30-bot.github.io/code-quiz/index.html/</a>
+                        <br><a href="https://github.com/Yazmin30-bot/code-quiz/"
+                            target="blank">https://github.com/Yazmin30-bot/code-quiz/</a>
+                    </figcaption>
+
+                </figure>
+
+
+                <!--   <figure>
                     <img src="./images/work_day_scheduler.png" />
                     <figcaption>Work Day Scheduler <br> <a href="https://yazmin30-bot.github.io/work-day-scheduler/" target="blank">https://yazmin30-bot.github.io/work-day-scheduler/</a>
                         <br><a href="https://github.com/Yazmin30-bot/work-day-scheduler/" target="blank">https://github.com/Yazmin30-bot/work-day-scheduler/</a>
@@ -103,17 +147,18 @@
                 </figcaption>
                 </figure> -->
 
-             
+
             </div>
         </section>
-         <!--Define Section Contact Me with contact links-->
+        <!--Define Section Contact Me with contact links-->
         <section id="contact-me">
             <div>
                 <h2>CONTACT ME</h2>
             </div>
             <nav id="contact-list">
                 <ul>
-                    <li><a href="https://www.linkedin.com/in/yazmin-tinoco-perez-19878b117/" target="blank">Linkedin</a></li>
+                    <li><a href="https://www.linkedin.com/in/yazmin-tinoco-perez-19878b117/" target="blank">Linkedin</a>
+                    </li>
                     <li><a href="https://my.indeed.com/p/yazmnt-nfmkhwb" target="blank">Indeed</a></li>
                     <li><a href="mailto:ytip30@gmail.com">Send email</a></li>
                     <li><a href="https://github.com/Yazmin30-bot" target="blank">GitHub</a></li>
@@ -122,9 +167,10 @@
         </section>
     </main>
 
-     <!--Define Footer-->
+    <!--Define Footer-->
     <footer>
         <h2>Made with ❤️️ by Yazmin</h2>
+        <p>Contact me: ytip30@gmail.com</p>
         <p>
             <small>&copy;</small> 2021
         </p>
