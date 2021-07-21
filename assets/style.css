@@ -185,6 +185,19 @@ figure a {
     font-size: 0.9em;
 }
 
+figcaption p {
+    font-size: 1em;
+}
+
+figcaption ul {
+    font-size: 0.9em;
+    list-style-type: none;
+}
+
+figcaption ul li {
+    font-size: 0.9em;
+}
+
 #contact-list ul {
     display: flex;
     list-style: none;
